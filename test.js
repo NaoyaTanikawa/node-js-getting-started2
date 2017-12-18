@@ -15,7 +15,7 @@ test('responds to requests', (t) => {
     request('http://127.0.0.1:5000', (error, response, body) => {
       // stop the server
       child.kill();
-
+      
       // No error
       t.false(error);
       // Successful response
