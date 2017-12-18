@@ -7,7 +7,7 @@ const env = Object.assign({}, process.env, {PORT: 5000});
 const child = spawn('node', ['index.js'], {env});
 
 test('responds to requests', (t) => {
-  t.plan(5);
+  t.plan(4);
   
   // Wait until the server is ready
   child.stdout.on('data', _ => {
@@ -23,7 +23,6 @@ test('responds to requests', (t) => {
       // Assert content checks
       t.notEqual(body.indexOf("<title>Node.js Getting Started on Heroku</title>"), -1);
       t.notEqual(body.indexOf("Getting Started with Node on Heroku"), -1);
-      t.notEqual(body.indexOf("( ⚆ _ ⚆ )"), -1);
     });
   });
 });
