@@ -17,6 +17,10 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
+## CodeShip Status
+
+[![Codeship Status for NaoyaTanikawa/node-js-getting-started2](https://app.codeship.com/projects/9cb1ddd0-c5de-0135-ea1a-167add8c9948/status?branch=master)](https://app.codeship.com/projects/261064)
+
 ## Deploying to Heroku
 
 ```
